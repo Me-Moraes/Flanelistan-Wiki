@@ -1,0 +1,203 @@
+/* 
+Banco de cores	          Hex	      Uso sugerido
+Azul Noite Fuji	        #1C252E	Fundo principal / cabeçalhos
+Cinza Névoa	            #5B6467	Textos secundários
+Azul Lago Kawaguchi	    #3E5360	Destaques e blocos
+Branco Neve	            #D9D9D2	Fundo claro / contraste
+Grafite Vulcânico	    #2B2F31	Tipografia principal
+Dourado Luzes da Vila	#C69B63	Botões e detalhes elegantes
+Verde Floresta Japonesa	#465248	Elementos naturais / ícones */
+
+/* Corpo da página */
+body {
+  margin: 0;
+  color: #2b2f31;
+  font-family: "Noto Sans", arial;
+  background-color: #d9d9d2;
+}
+/* Header e navegação (Flex) */
+.topo {
+  background-color: #3e5360;
+  position: sticky;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(198, 155, 99, 0.75);
+}
+.CardTitle {
+  font-family: "Dancing Script", Arial;
+  font-weight: 1200;
+  color: #d9d9d2;
+}
+.menu {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+.LinksMenu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+.LinksMenu a {
+  color: #c69b63;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.LinksMenu a:hover {
+  color: #d9d9d2;
+}
+/* Main (Grid) */
+
+/* Forms (dentro da main) */
+.form {
+  max-width: 480px;
+  margin: 40px auto;
+  padding: 32px;
+  background-color: #ebebe3;
+  border: 1px solid #c69b63;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+}
+
+.form h2 {
+  margin: 0 0 24px;
+  font-size: 20px;
+  color: #2b2f31;
+}
+
+.campos {
+  margin-bottom: 20px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #2b2f31;
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="tel"],
+.form input[type="password"],
+.form select,
+.form textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1.5px solid #c69b63;
+  border-radius: 8px;
+  font-size: 15px;
+  font-family: inherit;
+  color: #2b2f31;
+  background-color: #f7f7ec;
+  box-sizing: border-box;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: #c69b63;
+  box-shadow: 0 0 0 3px rgba(198, 155, 99, 0.2);
+}
+
+.form textarea {
+  resize: vertical;
+}
+
+.form button[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #f7f6ec;
+  color: #2b2f31;
+  border: 1px solid #bdbdb6;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.form button[type="submit"]:hover {
+  background-color: #bdbdbd;
+  border: 1px solid #868681;
+}
+
+.form button[type="submit"]:active {
+  transform: scale(0.97);
+}
+.form button[type="reset"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #eb2626;
+  color: #2b2f31;
+  border: 1px solid #c69b63;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.2s ease,
+    transform 0.1s ease;
+}
+
+.form button[type="reset"]:hover {
+  background-color: #961818;
+  border: 1px solid #6d1313;
+}
+
+.form button[type="reset"]:active {
+  transform: scale(0.97);
+}
+
+/* Footer Principal (Grid) */
+.bottom {
+  color: #5b6467;
+  background-color: #1c252e;
+  border-top: 2px solid #465248;
+  max-height: 240px;
+  justify-content: space-between;
+}
+.box {
+  display: grid;
+  grid-template-areas: "CardLeft CardCenter CardRight";
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px 15px;
+}
+.box div.CardLeft {
+  grid-area: CardLeft 1;
+  text-align: center;
+}
+.box div.CardCenter {
+  grid-area: CardCenter 1;
+  border-left: 1px solid #465248;
+  border-right: 1px solid #465248;
+  text-align: center;
+}
+.box div.CardRight {
+  grid-area: CardRight 1;
+  text-align: center;
+}
+.box a.button {
+  color: #5b6467;
+  font-weight: 600;
+  transition: color 0.3s;
+  text-decoration: none;
+}
+.box a:hover {
+  color: #d9d9d2;
+}
+.box li {
+  list-style: none;
+  padding: 4px;
+}
