@@ -1,12 +1,11 @@
 /* 
-Banco de cores	          Hex	      Uso sugerido
-Azul Noite Fuji	        #1C252E	Fundo principal / cabeçalhos
-Cinza Névoa	            #5B6467	Textos secundários
-Azul Lago Kawaguchi	    #3E5360	Destaques e blocos
-Branco Neve	            #D9D9D2	Fundo claro / contraste
-Grafite Vulcânico	    #2B2F31	Tipografia principal
-Dourado Luzes da Vila	#C69B63	Botões e detalhes elegantes
-Verde Floresta Japonesa	#465248	Elementos naturais / ícones */
+Cor	                         HEX	             Uso sugerido
+🟥 Vermelho escuro	#B00012	 Faixas e elementos principais
+🟥 Vermelho vivo	    #D00018  Destaques e detalhes
+🟨 Dourado	             #F2A900	Folhas, símbolos e ornamentos
+🟨 Amarelo ouro	      #FFC400	 Destaques mais claros
+⬛ Preto	                   #000000	 Fundo e contraste
+⚪ Branco	               #FFFFFF	Textos sobre fundos escuros */
 
 /* Corpo da página */
 body {
@@ -22,11 +21,6 @@ body {
   z-index: 100;
   box-shadow: 0 2px 8px rgba(198, 155, 99, 0.75);
 }
-.CardTitle {
-  font-family: "Dancing Script", Arial;
-  font-weight: 1200;
-  color: #d9d9d2;
-}
 .menu {
   max-width: 1100px;
   margin: 0 auto;
@@ -34,6 +28,21 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 15px;
+}
+.box-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.box-menu .CardTitle {
+  font-family: "Dancing Script", Arial;
+  font-weight: 1200;
+  color: #d9d9d2;
+}
+
+.box-menu img {
+  max-width: 100px;
+  margin: 0px;
 }
 .LinksMenu {
   display: flex;
@@ -168,36 +177,36 @@ body {
   max-height: 240px;
   justify-content: space-between;
 }
-.box {
+.box-footer {
   display: grid;
   grid-template-areas: "CardLeft CardCenter CardRight";
   grid-template-columns: repeat(3, 1fr);
   padding: 10px 15px;
 }
-.box div.CardLeft {
+.box-footer div.CardLeft {
   grid-area: CardLeft 1;
   text-align: center;
 }
-.box div.CardCenter {
+.box-footer div.CardCenter {
   grid-area: CardCenter 1;
   border-left: 1px solid #465248;
   border-right: 1px solid #465248;
   text-align: center;
 }
-.box div.CardRight {
+.box-footer div.CardRight {
   grid-area: CardRight 1;
   text-align: center;
 }
-.box a.button {
+.box-footer a.button {
   color: #5b6467;
   font-weight: 600;
   transition: color 0.3s;
   text-decoration: none;
 }
-.box a:hover {
+.box-footer a:hover {
   color: #d9d9d2;
 }
-.box li {
+.box-footer li {
   list-style: none;
   padding: 4px;
 }
