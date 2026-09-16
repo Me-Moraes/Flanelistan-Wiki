@@ -34,7 +34,7 @@ body {
   align-items: center;
   gap: 10px;
 }
-.box-menu .CardTitle {
+.box-menu .CardTitle-header {
   font-family: "Dancing Script", Arial;
   font-weight: 1200;
   color: #d9d9d2;
@@ -209,4 +209,9 @@ body {
 .box-footer li {
   list-style: none;
   padding: 4px;
+}
+.CardTitle-footer {
+  font-family: "Dancing Script", Arial;
+  font-weight: 1200;
+  color: #d9d9d2;
 }
