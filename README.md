@@ -1,5 +1,5 @@
 # Flanelistan-Wiki
-A enciclopédia oficial do Flanelistan. Documentando nossa história, grandes eventos, memes, lore e a evolução da nossa comunidade no Discord/Nationstates.
+A enciclopédia oficial do Flanelistan. Documentando nossa história, grandes eventos, memes, lore e a evolução da nossa comunidade no Discord & NationStates.
 # 🌐 Flanelistan - Wiki & Arquivo Histórico
 
 Bem-vindo ao repositório oficial de documentação do nosso servidor do Discord! Este espaço foi criado para preservar a memória da nossa comunidade, registrar momentos marcantes e organizar tudo o que faz o servidor ser o que é hoje.
