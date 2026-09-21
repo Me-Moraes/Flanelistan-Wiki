@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="output.css" />
-    <link rel="icon" type="image/png" href="./public/images/icon.png" />
+    <link rel="icon" type="image/png" href="./images/icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,12 +22,12 @@
             src="https://www.nationstates.net/images/flags/uploads/rflags/flanelistan__798786.png"
             alt="Flanelistan logo"
           />
-          <h1 class="CardTitle-header">Sobre nós</h1>
+          <h1 class="CardTitle-header">Suporte</h1>
         </span>
 
         <ul class="LinksMenu">
           <li><a href="wiki.html">Wiki</a></li>
-          <li><a href="">Link</a></li>
+          <li><a href="index.html">Sobre nós</a></li>
           <li><a href="">Link</a></li>
           <li><a href="">Link</a></li>
         </ul>
@@ -35,16 +35,60 @@
     </header>
     <main>
       <!-- id="topo" -->
-      <div style="height: 1000px" ;></div>
+      <form class="form">
+        <h2 class="texto-form">Formulário para contato</h2>
+        <div class="campos">
+          <label for="ex-nome">Nome completo</label>
+          <input
+            type="text"
+            id="ex-nome"
+            name="nome"
+            placeholder="Ex.: Maria Silva"
+            required
+          />
+        </div>
+        <div class="campos">
+          <label for="ex-email">E-mail</label>
+          <input
+            type="email"
+            id="ex-email"
+            name="email"
+            placeholder="seu@email.com"
+            required
+          />
+        </div>
+        <div class="campos">
+          <label for="ex-tel">Telefone</label>
+          <input
+            type="tel"
+            id="tel"
+            name="tel"
+            placeholder="(00) 00000-0000"
+            required
+          />
+        </div>
+        <div class="campos">
+          <label for="ex-mensagem">Mensagem</label>
+          <textarea
+            id="ex-mensagem"
+            name="mensagem"
+            rows="4"
+            placeholder="Descreva seu problema..."
+          ></textarea>
+        </div>
+        <button type="submit">Enviar</button>
+        <br /><br />
+        <button type="reset">Resetar</button>
+      </form>
     </main>
     <footer class="bottom">
       <article class="box-footer">
         <div class="CardLeft">
           <h2 class="CardTitle-footer">Navegação</h2>
-          <li><a class="button" href="">Link</a></li>
+          <li><a class="button" href="">link</a></li>
           <li><a class="button" href="">Link</a></li>
           <li><a class="button" href="credits.html">Créditos</a></li>
-          <li><a class="button" href="forms.html">Suporte</a></li>
+          <li><a class="button" href="">Link</a></li>
         </div>
         <div class="CardCenter">
           <h2 class="CardTitle-footer">Redes Sociais</h2>
